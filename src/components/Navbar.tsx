@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { login } from '@/lib/auth-actions';
 import { Session } from 'next-auth';
 
-export default function Navbar({session}: {session: Session | null}) {
+
+export default function Navbar({session}: {session: Session}) {
   return (
 <nav className='bg-white shadow-md py-4 border-b border-gray-200'>
 <div className='container max-auto flex justify-between items-center px-6 lg:px-8'>
